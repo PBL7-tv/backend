@@ -1,0 +1,288 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop ASUS ExpertBook B1 B1402CVA NK1280",
+    "description": "1112",
+    "selling_price": 100000,
+    "images": [
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746163613/jmvdcfvrhgvcyn3uycub.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746163621/ywqm8q8hmjuwkzc2xg6y.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746163627/jjr4an2bujvo1gnewopt.webp"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Laptop Lenovo IdeaPad Slim 3 15ABR8 82XM00MCVN",
+    "description": "aaa",
+    "selling_price": 300,
+    "images": [
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746164314/oabzuw7wcaxcyohl26ec.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746164321/zkhr1lt25zcu8zlbbnsw.webp"
+    ]
+  },
+  {
+    "id": 203,
+    "name": "Laptop ASUS Vivobook 14 OLED A1405ZA KM264W",
+    "description": "",
+    "selling_price": 10000000,
+    "images": [
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746189189/pseeic0xhty6ppdpnkzk.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746189214/iqlyadf5dhfbbf4p1ad2.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746189220/vwid8ytauzevbpwsfqet.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746189226/bghruzxilk02uabanpao.webp"
+    ]
+  },
+  {
+    "id": 252,
+    "name": "Laptop ASUS Zenbook 14 UM3406KA PP555WS",
+    "description": "",
+    "selling_price": 31000000,
+    "images": [
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746242299/blu04du46jjpz7t6jwb5.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746242338/uuzag9ndirqz9j3vjmii.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746242350/qxzldte9he6to8eamqsg.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746242354/wkcimphuvnvvyfsngfeg.webp"
+    ]
+  },
+  {
+    "id": 253,
+    "name": "Laptop ASUS Zenbook 14 UX3407QA QD299WS",
+    "description": "",
+    "selling_price": 21000000,
+    "images": [
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746242503/dkzubrsotqtafagybrxk.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746242514/dz4rncc9arzpnep5pxof.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746242522/gtsgdsbcyk7ozx7jba2f.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746242528/qnlqebkwd1nlqyiqfls4.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746242533/qizbj3zhlzgvlgaaykeu.webp"
+    ]
+  },
+  {
+    "id": 254,
+    "name": "Laptop ASUS Vivobook S 14 S5406SA PP060WS",
+    "description": "",
+    "selling_price": 26500000,
+    "images": [
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746242866/jz9y2icxmacuiga2rstu.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746242865/t3tk4tx5ahbjsslp0xxn.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746242866/jn7vjdsemj6ltrswngnv.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746242866/yk0aiyqay2bfwoazxzu0.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746242866/nbpo7uw9rqtetpvvvblo.webp"
+    ]
+  },
+  {
+    "id": 255,
+    "name": "Laptop ASUS ExpertBook B1 B1402CVA NK1280",
+    "description": "",
+    "selling_price": 14600000,
+    "images": [
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746243072/bzgvicpyxybr05cjqtdg.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746243071/vqihuezqcen0xo3mxy2q.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746243071/gfuhshmzt5ogxxot1ujf.webp"
+    ]
+  },
+  {
+    "id": 256,
+    "name": "Laptop ASUS Zenbook 14 UX3405CA PZ204WS",
+    "description": "",
+    "selling_price": 36990000,
+    "images": [
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746243320/vjewg01epenkcaff3lhz.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746243320/dfwtppz9dgzbaohkesi7.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746243320/ssdzgxrtmg04mkwuycjf.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746243320/dycna403nqqwm9wzvdhp.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746243320/zeedetcwfjyxnyryxjqi.webp"
+    ]
+  },
+  {
+    "id": 257,
+    "name": "Laptop ASUS Vivobook S 16 OLED M5606KA RI016WS",
+    "description": "",
+    "selling_price": 30990000,
+    "images": [
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746243480/jslexzdws7sczpbrdblw.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746243480/q8svbkogppkj3zni1kfi.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746243480/yrzqcfmfa17z6a3ujsov.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746243480/dds3vossroe9oco1ly3t.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746243480/fiw2kwre6rrsscfwhak1.webp"
+    ]
+  },
+  {
+    "id": 258,
+    "name": "Laptop ASUS Zenbook 14 UX3407QA QD299WS",
+    "description": "",
+    "selling_price": 27990000,
+    "images": [
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746243741/cxccvyacqo69otrvsdjd.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746243740/wlot5lyr82sbha5gjvds.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746243741/h1wekp4cq6fkqrjkgxs8.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746243740/t9kwhtivwdhwl4svlu7c.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746243740/jhpwndrreugz0jspth1g.webp"
+    ]
+  },
+  {
+    "id": 259,
+    "name": "Laptop ASUS Zenbook S 14 OLED UX5406SA PV140WS",
+    "description": "",
+    "selling_price": 41890000,
+    "images": [
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746243885/oyzgno1ta1g0voqpdaay.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746243885/u1xugyhdety7hz0benhn.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746243885/ekxagbdkzix9sllrenwt.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746243885/t3rymh9f3qlybs9efsly.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746243885/qliscuqljpklsmisgl2a.webp"
+    ]
+  },
+  {
+    "id": 260,
+    "name": "Laptop ASUS Vivobook S 14 OLED M5406WA PP071WS",
+    "description": "",
+    "selling_price": 32890000,
+    "images": [
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746244043/of5toyqt6lrsmocslpmd.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746244044/hy7flpnwu7bk5ugq97uq.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746244044/znjpij9csxwhrutuswad.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746244044/v77daytvuetokuqda24k.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746244044/j37gtdpq6zs2w02s1ogr.webp"
+    ]
+  },
+  {
+    "id": 261,
+    "name": "Laptop ASUS Zenbook Duo 14 UX482EG KA166T",
+    "description": "",
+    "selling_price": 33890000,
+    "images": [
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746244131/xlx6mt7swswbatgcsuql.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746244133/s2j4k1uu8kl6aoqxchen.webp"
+    ]
+  },
+  {
+    "id": 302,
+    "name": "Laptop ASUS ZenBook UX425EA KI439T",
+    "description": "",
+    "selling_price": 28340000,
+    "images": [
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746245439/lxp7pqnksledc0y2hsxs.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746245452/jce7b0ecwapg2hxuyu9l.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746245452/j36pgvi5optphn3gpi7y.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746245453/itvud4hwvkroezryvdkt.webp"
+    ]
+  },
+  {
+    "id": 303,
+    "name": "Laptop ASUS Zenbook 14 OLED UX3402VA KM203W",
+    "description": "",
+    "selling_price": 23890000,
+    "images": [
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746261609/ycqksesxzmf4ub6v3xsy.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746261609/csort71rgxha5msqm0t1.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746261609/kwgc2nuq3facwmvva2v2.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746261609/gzbs3msldmmfzmh0gmvf.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746261609/xhkhepofuw53lhlcfnn8.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746261609/bpggieojclesgsfus5w3.webp"
+    ]
+  },
+  {
+    "id": 305,
+    "name": "Laptop gaming Acer Predator Helios Neo 16 PHN16 72 78L4",
+    "description": "",
+    "selling_price": 37490000,
+    "images": [
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746262543/oadp1zj7av6wruj9dfng.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746262540/lojvodwbei0aixrbpqr3.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746262541/ubufaamttgr6xvsek1f5.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746262541/ejmlbywyx5o3vzn2y5wi.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746262541/fueubzry8edn2g1ed1gs.webp"
+    ]
+  },
+  {
+    "id": 306,
+    "name": "Laptop gaming MSI Thin 15 B13UC 2044VN",
+    "description": "",
+    "selling_price": 19290000,
+    "images": [
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746263086/ummv5d27xna5x39pbcej.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746263085/wdsumi8xdvfl5jnu5rig.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746263086/qbdyniwmx8otu1bq5sc4.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746263086/g3mdp1d5rupqrm8ow8nn.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746263086/tbykjb2foorhnqnh0t3d.webp"
+    ]
+  },
+  {
+    "id": 307,
+    "name": "Laptop gaming Gigabyte G5 MF5 H2VN353KH",
+    "description": "",
+    "selling_price": 21290000,
+    "images": [
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746264742/xf49x9atlusdazgaprqn.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746264741/fahgrntk3hnqh40u8wjk.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746264742/vlqkxcaqk8meh4n5ghpl.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746264742/dfteqse2gcbrwz3a5i68.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746264741/u5sd386xjusxca4sruji.webp"
+    ]
+  },
+  {
+    "id": 308,
+    "name": "Laptop Dell XPS 9350 XPS9350-U5IA165W11GR-FP",
+    "description": "",
+    "selling_price": 54990000,
+    "images": [
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746264991/wrpvjocikvuxbehdoc7h.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746264991/icl6g9ba7bkrzrjg5ksb.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746264991/krmpavs9en6otbkzvpte.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746264991/owvwuofql5ckfkbwtdcc.webp"
+    ]
+  },
+  {
+    "id": 352,
+    "name": "Tai nghe Asus ROG Pelta WL RGB Black",
+    "description": "",
+    "selling_price": 3490000,
+    "images": [
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746281117/j1vgy7rcj0qu2ufrfuxi.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746281117/ytn8yxowuakbqau5uus8.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746281117/z5cpxqilnnv2zxhqnpkc.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746281117/ut74delljrg6juqps3ie.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746281117/wikp6s7c3ldzrvfftdlg.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746281117/wmwgp57pwhcmuh3ott31.webp"
+    ]
+  },
+  {
+    "id": 353,
+    "name": "Tai nghe Logitech G733 LIGHTSPEED Wireless Black",
+    "description": "",
+    "selling_price": 2250000,
+    "images": [
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746283971/g7rhzsm1tpmbwvsgkogr.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746283971/yemjqusldmkfphnyesfk.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746283971/s0p6nd6k2w6nwnt9pajb.webp"
+    ]
+  },
+  {
+    "id": 354,
+    "name": "Tai nghe Logitech G435 Lightspeed Wireless - Black",
+    "description": "",
+    "selling_price": 1250000,
+    "images": [
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746284037/vcpdcf9denwuyt6afyw4.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746284037/uhlrnblorroaxwfetdly.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746284037/rdzr72ruwokouqgz6g1b.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746284036/t2zj5auzj2bsexk1ltla.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746284036/skb0xskbe4rfjmaunhrz.webp"
+    ]
+  },
+  {
+    "id": 355,
+    "name": "Tai nghe Asus ROG Cetra II Core",
+    "description": "",
+    "selling_price": 850000,
+    "images": [
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746284356/ds8xrx3mgms9zbsovo46.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746284356/spgghzp82fvlm2v6iklv.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746284356/nx5xwktfc8r2i63dqaja.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746284356/lio2wk2n3xulwgae3tf5.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746284356/rxcoym56pq3srfhsgp3n.webp",
+      "http://res.cloudinary.com/ditfrpqoc/image/upload/v1746284356/zu7vniqmywjuuhacl6xs.webp"
+    ]
+  }
+]

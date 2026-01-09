@@ -1,0 +1,28 @@
+server:
+  port: 8087
+  servlet:
+    context-path: /payment
+spring:
+  application:
+    name: payment-service
+  datasource:
+    url: "jdbc:mysql://localhost:3307/pbl7_payment_service?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false"
+    driverClassName: "com.mysql.cj.jdbc.Driver"
+    username: root
+    password: viet12345
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+app:
+  services:
+    order: http://localhost:8085
+payment:
+  vnpay:
+    url: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html
+    returnUrl: http://localhost:8888/api/v1/payment/online/vn-pay-callback
+    tmnCode: 12N5O7DV
+    secretKey: GEU5SL8GZKNP0QZZ5NO9ZU4XRV1W0902
+    version: 2.1.0
+    command: pay
+    orderType: other

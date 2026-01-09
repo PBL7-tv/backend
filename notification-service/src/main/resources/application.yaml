@@ -1,0 +1,31 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /notification
+spring:
+  application:
+    name: notification-service
+  data:
+    mongodb:
+      uri: ${MONGODB_URI}
+  kafka:
+    bootstrap-servers: localhost:9094
+    consumer:
+      group-id: notification-pbl7-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "*"
+notification:
+  email:
+    brevo-url: https://api.brevo.com
+    brevo-apikey: ${BREVO_API_KEY}
+
+
+
+logging:
+  level:
+    com.pbl7.notification_service.repository.httpclient.EmailClient: DEBUG
+    feign: DEBUG
+

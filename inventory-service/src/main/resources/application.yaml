@@ -1,0 +1,17 @@
+server:
+  port: 8086
+  servlet:
+    context-path: /inventory
+
+spring:
+  application:
+    name: inventory-service
+  datasource:
+    url: "jdbc:mysql://localhost:3307/pbl7_inventory_service?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false"
+    driverClassName: "com.mysql.cj.jdbc.Driver"
+    username: root
+    password: viet12345
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

@@ -1,0 +1,82 @@
+server:
+  port: 8888
+
+app:
+  api-prefix: /api/v1
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: 
+              - "http://localhost:3000"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+            allowedHeaders: "*"
+            allowCredentials: true
+      routes:
+        - id: identity_service
+          uri: http://localhost:8080
+          predicates:
+            - Path=${app.api-prefix}/identity/**
+          filters:
+            - StripPrefix=2
+        - id: profile_service
+          uri: http://localhost:8081
+          predicates:
+            - Path=${app.api-prefix}/cart/**
+          filters:
+            - StripPrefix=2
+        - id: notification_service
+          uri: http://localhost:8082
+          predicates:
+            - Path=${app.api-prefix}/notification/**
+          filters:
+            - StripPrefix=2
+        - id: category_service
+          uri: http://localhost:8083
+          predicates:
+            - Path=${app.api-prefix}/category/**
+          filters:
+            - StripPrefix=2
+        - id: product_service
+          uri: http://localhost:8084
+          predicates:
+            - Path=${app.api-prefix}/product/**
+          filters:
+            - StripPrefix=2
+        - id: order_service
+          uri: http://localhost:8085
+          predicates:
+            - Path=${app.api-prefix}/order/**
+          filters:
+            - StripPrefix=2
+        - id: payment_service
+          uri: http://localhost:8087
+          predicates:
+            - Path=${app.api-prefix}/payment/**
+          filters:
+            - StripPrefix=2
+
+        - id: inventory_service
+          uri: http://localhost:8086
+          predicates:
+            - Path=${app.api-prefix}/inventory/**
+          filters:
+            - StripPrefix=2
+
+        - id: ai_service
+          uri: http://localhost:5001
+          predicates:
+            - Path=${app.api-prefix}/ai/**
+          filters:
+            - StripPrefix=3
+

@@ -1,0 +1,168 @@
+# HỆ THỐNG CHATBOT AI CHO CỬA HÀNG THIẾT BỊ ĐIỆN TỬ
+
+## Mục lục
+1. Tổng quan hệ thống
+2. Phân loại câu hỏi (Semantic Router)
+3. Hệ thống Hybrid Search
+4. Hệ thống Recommendation
+5. Kiến trúc và Triển khai
+
+## 1. Tổng quan hệ thống
+
+### 1.1 Kiến trúc tổng thể
+- Frontend: Streamlit interface
+- Backend: Flask server
+- Database: MongoDB (chat history) và ChromaDB (vector database)
+- AI Models: Gemini và Vietnamese SBERT
+
+### 1.2 Các thành phần chính
+- Semantic Router: Phân loại câu hỏi
+- RAG System: Retrieval Augmented Generation
+- Recommendation System: Đề xuất sản phẩm
+- Reflection System: Quản lý context và lịch sử
+
+## 2. Phân loại câu hỏi (Semantic Router)
+
+### 2.1 Cơ chế hoạt động
+- Sử dụng mô hình embedding "keepitreal/vietnamese-sbert"
+- Phân loại câu hỏi thành 2 loại: Product và Chitchat
+- Tính toán cosine similarity để xác định loại câu hỏi
+
+### 2.2 Mẫu câu training
+Product Sample:
+- "Cho mình xem danh sách laptop"
+- "Shop có điện thoại không?"
+- "Tai nghe nào đang hot?"
+
+Chitchat Sample:
+- "Xin chào"
+- "Bạn khỏe không"
+- "Cảm ơn bạn"
+
+### 2.3 Quy trình xử lý
+1. Nhận input từ user
+2. Chuyển đổi thành vector embedding
+3. So sánh với các mẫu câu
+4. Xác định route phù hợp
+5. Chuyển đến xử lý tương ứng
+
+## 3. Hệ thống Hybrid Search
+
+### 3.1 Định nghĩa
+Kết hợp hai phương pháp tìm kiếm:
+- Vector Search: Tìm kiếm theo ngữ nghĩa
+- Keyword Search: Tìm kiếm theo từ khóa
+
+### 3.2 Cơ chế hoạt động
+```python
+def hybrid_search(self, query: str, query_embedding: list):
+    # Vector Search
+    vector_results = self.collection.query(
+        query_embeddings=[query_embedding],
+        n_results=limit
+    )
+    
+    # Keyword Search
+    keyword_results = self.collection.query(
+        query_texts=[query],
+        n_results=limit
+    )
+    
+    # Merge kết quả
+    doc_lists = [vector_results, keyword_results]
+    fused_documents = self.weighted_reciprocal_rank(doc_lists)
+```
+
+### 3.3 Ưu điểm
+- Tăng độ chính xác của kết quả
+- Xử lý được đa dạng câu query
+- Cải thiện recall và precision
+
+## 4. Hệ thống Recommendation
+
+### 4.1 Nguồn dữ liệu
+- Lịch sử mua hàng (MySQL)
+- Lịch sử chat (MongoDB)
+- Current query của user
+- Thông tin sản phẩm (Vector Database)
+
+### 4.2 Cơ chế đề xuất
+```python
+def get_personalized_recommendations(self, user_id: str, current_query: str):
+    # Lấy interests từ lịch sử
+    interests = self.get_user_interests(user_id)
+    
+    # Kết hợp với query hiện tại
+    combined_query = f"{current_query} {' '.join(interests)}"
+    
+    # Tìm kiếm với query đã kết hợp
+    recommendations = self.hybrid_search(
+        query=combined_query,
+        query_embedding=query_embedding,
+        limit=limit
+    )
+```
+
+current query 
+
+# Scenario 1: User mới tìm laptop gaming
+current_query = "laptop gaming"
+interests = []  # User mới, chưa có interests
+combined_query = "laptop gaming"  # Chỉ dựa vào query hiện tại
+
+# Scenario 2: User đã từng mua gaming accessories
+current_query = "laptop gaming"
+interests = ["gaming mouse", "gaming headset", "RTX graphics"]
+combined_query = "laptop gaming gaming mouse gaming headset RTX graphics"
+# -> Kết quả sẽ thiên về gaming và có thể đề xuất thêm phụ kiện gaming
+
+# Scenario 3: User đang tìm laptop cụ thể
+current_query = "MSI Thin GF63"
+interests = ["gaming", "budget friendly"]
+combined_query = "MSI Thin GF63 gaming budget friendly"
+# -> Kết quả sẽ show MSI Thin GF63 và các laptop gaming tương tự trong tầm giá
+
+
+def hybrid_search(self, query: str, query_embedding: list):
+    # 1. Lấy kết quả từ vector search
+    vector_results = self.collection.query(
+        query_embeddings=[query_embedding],
+        n_results=limit
+    )
+    
+    # 2. Lấy kết quả từ keyword search
+    keyword_results = self.collection.query(
+        query_texts=[query],
+        n_results=limit
+    )
+    
+    # 3. Áp dụng RRF
+    doc_lists = [vector_results, keyword_results]
+    fused_documents = self.weighted_reciprocal_rank(doc_lists)
+    
+    return fused_documents  tác dụng của rrf
+
+# Trước khi áp dụng RRF:
+
+# Vector Search (tìm theo ngữ nghĩa)
+vector_results = [
+    "MSI Gaming GF63" (rank 1),      # Vì hiểu "gaming" và "giá rẻ"
+    "Acer Nitro 5" (rank 2),         # Laptop gaming phổ thông
+    "Lenovo IdeaPad" (rank 3)        # Laptop giá rẻ
+]
+
+# Keyword Search (tìm theo từ khóa)
+keyword_results = [
+    "Lenovo IdeaPad Gaming" (rank 1), # Vì có từ "gaming" và "giá rẻ"
+    "MSI Gaming GF63" (rank 2),       # Match từ khóa "gaming"
+    "HP Gaming Victus" (rank 3)       # Match từ khóa "gaming"
+]
+
+# Sau khi áp dụng RRF:
+final_results = [
+    "MSI Gaming GF63",       # Score cao nhất vì xuất hiện top trong cả 2 danh sách
+    "Lenovo IdeaPad Gaming", # Score tốt từ cả 2 nguồn
+    "Acer Nitro 5",         # Score tốt từ vector search
+    "HP Gaming Victus"      # Score thấp hơn
+]
+

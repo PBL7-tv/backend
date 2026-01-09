@@ -1,0 +1,31 @@
+server:
+  port: 8085
+  servlet:
+    context-path: /order
+
+spring:
+  application:
+    name: order-service
+  datasource:
+    url: "jdbc:mysql://localhost:3307/pbl7_order_service?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false"
+    driverClassName: "com.mysql.cj.jdbc.Driver"
+    username: root
+    password: viet12345
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  kafka:
+    bootstrap-servers: localhost:9094
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+app:
+  services:
+    cart: http://localhost:8081
+    identity: http://localhost:8080
+    payment: http://localhost:8087
+    inventory: http://localhost:8086
+
+
+

@@ -1,0 +1,21 @@
+server:
+  port: 8084
+  servlet:
+    context-path: /product
+spring:
+  application:
+    name: product-service
+  datasource:
+    url: "jdbc:mysql://localhost:3307/pbl7_product_service?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false"
+    driverClassName: "com.mysql.cj.jdbc.Driver"
+    username: root
+    password: viet12345
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+app:
+  services:
+    category: http://localhost:8083/category
+    inventory: http://localhost:8086/inventory
+

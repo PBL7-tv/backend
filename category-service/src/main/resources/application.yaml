@@ -1,0 +1,16 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /category
+spring:
+  application:
+    name: category-service
+  datasource:
+    url: "jdbc:mysql://localhost:3307/pbl7_category_service?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false"
+    driverClassName: "com.mysql.cj.jdbc.Driver"
+    username: root
+    password: viet12345
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
