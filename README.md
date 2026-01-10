@@ -1,22 +1,24 @@
+# 🛍️ VGearVN - E-Commerce Backend System
+
 A microservices-based e-commerce backend with product management, order processing, payment integration, and an intelligent AI chatbot.
 
 ## 🎯 Overview
 
 VGearVN provides a complete e-commerce backend solution with:
 
-- ✅ JWT-based authentication with email verification
-- ✅ Product & category management (CRUD operations)
-- ✅ Shopping cart & order processing
-- ✅ VNPay payment gateway integration
-- ✅ Real-time inventory tracking
-- ✅ Email notifications via Brevo
-- ✅ AI chatbot with RAG and semantic routing
-- ✅ Personalized product recommendations
+-  JWT-based authentication with email verification
+-  Product & category management (CRUD operations)
+-  Shopping cart & order processing
+-  VNPay payment gateway integration
+-  Real-time inventory tracking
+-  Email notifications via Brevo
+-  AI chatbot with RAG and semantic routing
+-  Personalized product recommendations
 
 ## 🏗️ Architecture
 
 ```
-<img width="1222" height="661" alt="pbl7" src="https://github.com/user-attachments/assets/6f4b9948-fb7f-45a3-a5f5-5fa7b4fec2e4" />
+<img width="122" height="61" alt="pbl7" src="https://github.com/user-attachments/assets/6f4b9948-fb7f-45a3-a5f5-5fa7b4fec2e4" />
 
 ```
 
