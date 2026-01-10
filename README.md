@@ -72,23 +72,6 @@ POST   /payment/**                       # Payment operations
 GET    /inventory/**                     # Inventory operations
 ```
 
-### Example Requests
-```bash
-# Login
-curl -X POST http://localhost:8888/api/v1/identity/auth/token \
-  -H "Content-Type: application/json" \
-  -d '{"email": "user@example.com", "password": "password123"}'
-
-# Get Products
-curl -X GET http://localhost:8888/api/v1/product/find-all \
-  -H "Authorization: Bearer <token>"
-
-# AI Chat
-curl -X POST http://localhost:8888/api/v1/ai/chat \
-  -H "Content-Type: application/json" \
-  -d '{"query": "Show me laptops", "session_id": "session-123", "user_id": "user-456"}'
-```
-
 ## 🔐 Security
 
 - JWT-based authentication with token expiration (1 hour)
