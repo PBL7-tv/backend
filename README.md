@@ -1,4 +1,4 @@
-# 🛍️ VGearVN - E-Commerce Backend System
+# 🛍️ VGear - E-Commerce Backend System
 
 A microservices-based e-commerce backend with product management, order processing, payment integration, and an intelligent AI chatbot.
 
