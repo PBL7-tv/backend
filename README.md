@@ -17,7 +17,7 @@ VGearVN provides a complete e-commerce backend solution with:
 
 ## 🏗️ Architecture
 
-<img width="122" height="61" alt="pbl7" src="https://github.com/user-attachments/assets/6f4b9948-fb7f-45a3-a5f5-5fa7b4fec2e4" />
+<img width="1222" height="661" alt="pbl7" src="https://github.com/user-attachments/assets/6f4b9948-fb7f-45a3-a5f5-5fa7b4fec2e4" />
 
 
 **Authentication**: API Gateway validates JWT tokens via Identity Service `/auth/introspect` endpoint.
