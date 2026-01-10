@@ -27,8 +27,8 @@ VGearVN provides a complete e-commerce backend solution with:
 ## 🛠️ Technology Stack
 
 **Backend (Java)**: Spring Boot 3.4.2, Spring Cloud Gateway, Spring Data JPA, Spring Kafka, JWT, Java 21  
-**AI Service (Python)**: Flask 3.0.3, Google Gemini API, ChromaDB, Sentence Transformers  
-**Databases**: MySQL 8.0+, MongoDB 5.0+, Apache Kafka 3.0+  
+**AI (Python)**: Flask 3.0.3, Google Gemini API, ChromaDB, Sentence Transformers  
+**Databases**: MySQL, MongoDB, Apache Kafka
 **External**: Brevo (email), VNPay (payment), Google Gemini (AI)
 
 ## 📦 Prerequisites
